@@ -1,0 +1,348 @@
+<!DOCTYPE html>   
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<!--[if IE]><![endif]-->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title></title>
+	<meta name="description" content="">
+	<meta name="keywords" content="" />
+	<meta name="author" content="">
+	<meta name="viewport" content="width=device-width; initial-scale=1.0">
+	<!-- !CSS -->
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="public/foundation/css/normalize.css">
+	<link rel="stylesheet" href="public/foundation/css/style.css">
+	<link href='http://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
+	<!-- Uncomment if you are specifically targeting less enabled mobile browsers
+	<link rel="stylesheet" media="handheld" href="css/handheld.css?v=1">  -->
+	<!-- !Modernizr - All other JS at bottom -->
+	<script src="public/modernizr/modernizr.js"></script>
+	<script src="public/jquery/dist/jquery.min.js"></script>
+	<script src="public/foundation/js/foundation.min.js"></script>
+	<script src="public/foundation/js/datatables.js"></script>
+	<script src="public/foundation/js/custom.js"></script>
+	<script src="public/foundation/js/datepicker.js"></script>
+	<script src="js/jquery.nicescroll.min.js"></script>
+	<script src="js/JSXTransformer.js"></script>
+	<script src="js/react.js"></script>
+	<!-- <script src="js/events.json"></script> -->
+	<script type="text/jsx" src="js/dovetail.js"></script>
+</head>
+<!-- !Body -->
+<body>
+	<nav class="top-bar" &nbsp;-topbar>
+  <ul class="title-area">
+    <li class="name">
+      <h1><a href="#">Dovetail</a></h1>
+    </li>
+  </ul>
+
+  <section class="top-bar-section">
+    <!-- Right Nav Section -->
+    <ul class="right">
+    	<li><a href='#'>christy@newg.com</a></li>
+      <li class=""><a href="#">Settings</a></li>
+      <li class=""><a href="#">Profile</a></li>
+      <li class="active"><a href="#">Log Out</a></li>
+    </ul>
+  </section>
+  </nav>
+  <div id="top-bar-nav">
+  	<div class="button-bar">
+  		<ul class="button-group radius">
+  			<li><a class="button" href="#" id="today_period">Today</a></li>
+  		</ul>
+  		<ul class="button-group radius">
+		  <li><a href="#" class="button" id="prev_period">PREV</a></li>
+		  <li><a href="#" class="button" id="calendar_period"><i class="fa fa-calendar"></i></a></li>
+		  <li><a href="#" class="button" id="next_period">NEXT</a></li>
+  	</ul>
+  		<ul class="button-group">
+  			<li><div class="date-range" id="date-range">
+  	</div></li>
+  		
+  		</ul>
+  	</div>
+  	
+  </div>
+  <div id="calendar-main">
+  		<!-- Push Wrapper -->
+
+  		
+			<div class="mp-pusher" id="mp-pusher" style="-webkit-transform: translate3d(0px, 0px, 0px);">
+				
+				<!-- mp-menu -->
+				<nav id="mp-menu" class="mp-menu">
+					<div class="mp-level">
+						<h2 class="">All Categories</h2>
+						<div id="refresh"></div>
+						<ul>
+							<li class="icon icon-arrow-left">
+								<a class="icon icon-display" href="#">Arts</a>
+							</li>
+							<li class="icon icon-arrow-left">
+								<a class="icon icon-display" href="#">Business</a>
+							</li>
+							<li class="icon icon-arrow-left">
+								<a class="icon icon-display" href="#">Community</a>
+							</li>
+							<li class="icon icon-arrow-left">
+								<a class="icon icon-display" href="#">Education</a>
+							</li>
+							<li class="icon icon-arrow-left">
+								<a class="icon icon-display" href="#">Energy</a>
+							</li>
+							<li class="icon icon-arrow-left">
+								<a class="fa fa-chevron-left" href="#">Environment</a>
+								<div class="mp-level">
+									<h2 class="fa fa-chevron-left">Environment</h2>
+									<a class="mp-back" href="#">back</a>
+									<ul>
+																		<li><a class="calendar" href="#" data-id="uep"><span>Urban Ecosteward Program</span><i class="fa fa-square-o"></i></a></li>
+													<li><a class="calendar" href="#" data-id="pgc" ><span>Pittsburgh Green Clean</span><i class="fa fa-square-o"></i></a></li>
+													<li><a class="calendar" href="#" data-id="cith" ><span>Chicks in the Hood</span><i class="fa fa-square-o"></i></a></li>
+													<li><a  class="calendar" href="#" data-id="lgt" ><span>Larimer Green Team</span><i class="fa fa-square-o"></i></a></li>
+													<li><a  class="calendar" href="#" data-id="bgcg" ><span>Black and Gold City Goes Green</span><i class="fa fa-square-o"></i></a></li>
+									</ul>
+								</div>
+							</li>
+							<li class="icon icon-arrow-left">
+								<a class="icon icon-display" href="#">Farming</a>
+							</li>
+							<li class="icon icon-arrow-left">
+								<a class="fa fa-chevron-left" href="#">Food</a>
+								<div class="mp-level">
+									<h2 class="">Food</h2>
+									<a class="mp-back" href="#">back</a>
+									<ul>
+										<li><a class="calendar" href="#" data-id="smf">Small Farm Central</a></li>
+										<li><a class="calendar"  href="#" data-id="eda">Edible Allegheny</a></li>
+										<li><a class="calendar"  href="#" data-id="jptg">Juice Plus Tower Garden</a></li>
+										<li><a class="calendar"  href="#" data-id="pca">Penn's Corner Alliance</a></li>
+										<li><a class="calendar"  href="#" data="ppm">Pittsburgh Public Market
+</a></li>
+										<li><a class="calendar"  href="#" data-id='hp'>Hempzels Pretzels</a></li>
+									</ul>
+								</div>
+							</li>
+							<li><a class="icon icon-photo" href="#">Government</a></li>
+							<li><a class="icon icon-wallet" href="#">Health</a></li>
+							<li><a class="icon icon-wallet" href="#">Local</a></li>
+							<li><a class="icon icon-wallet" href="#">Nonviolence</a></li>
+							<li><a class="icon icon-wallet" href="#">Religion</a></li>
+							<li><a class="icon icon-wallet" href="#">Services</a></li>
+							<li><a class="icon icon-wallet" href="#">Sports</a></li>
+							<li><a class="icon icon-wallet" href="#">Water</a></li>
+							<li><a class="icon icon-wallet" href="#">Youth</a></li>
+						</ul>
+							
+					</div>
+				</nav>
+
+		<div class="scroller"><!-- this is for emulating position fixed of the nav -->
+            <div class="scroller-inner">
+		<div id="calendar-scroll">
+  		<div id="calendar-left">
+  			<table id="calendar-organizations" class="table">
+  				<thead>
+  					<tr><th class="top-trigger"><a href='#' id="trigger">Calendars <i class="fa fa-plus-square"></i></a></th></tr>
+  				</thead>
+  				<tbody id="calendar-category">
+  					
+  				</tbody>
+  			</table>
+  		</div>
+  		<div id="calendar">
+  		</div>
+		</div>
+  		<div id="calendar-sidebar">
+  			<div class="event-box">
+  				<h2>My Events</h2>
+  				<!-- <i class="fa fa-plus-square"></i> -->
+  				<div class="event-listing">
+<!--   					<div class="event-time">2 weeks to go</div> -->
+  					<div class="event-title">Fossil Fool Concert</div>
+  					<div class="event-details">Sat 5/17, 4-6 PM, Frick Park</div>
+  				</div>
+  				
+  				<div class="event-listing tent">
+<!--   					<div class="event-time">2 weeks to go</div> -->
+  					<div class="event-title">Peer-to-Peer Meetup</div>
+  					<div class="event-details">Wed 7/16, 6-8 PM, Collegiate YMCA</div>
+  				</div>
+  			</div>
+  			<div class="event-box">
+  			<h2>Recent Activity</h2>
+  				<div class="event-listing teal">
+<!--   					<div class="event-time">2 weeks to go</div> -->
+  					<div class="event-title">Immigration Reform Rally</div>
+  					<div class="event-details">Sat 8/2, 10-2 PM, Liberty Ave.</div>
+  				</div>
+  			
+  			</div>
+  		</div>
+  		
+  		 </div><!-- /scroller-inner -->
+        </div><!-- /scroller -->
+         </div><!-- /pusher -->
+     <div id="view_modal" class="reveal-modal small" data-reveal>
+     	<h4 id="event_title">Event Details</h4>
+     	<div class="row collapse padding">
+     		
+     		
+	 		<div class="small-6 columns divider">
+	 		<label>Event Name</label>
+	 		<p>All day RACE: Are We So Different?</p>
+	 		</div>
+	 		<div class="small-6 columns">
+	 		<label>Event Date</label>
+	 		<p>May 4, 2014, 4pm - 6pm</p>
+	 		</div>
+     	</div>
+     	<div class="row collapse">
+	 		<div class="small-6 columns">
+	 			<label>Organization</label>
+	 			<p>Thomas Merton Center</p>
+	 		</div>
+	 		<div class="small-6 columns">
+	 			<label>Location</label>
+	 			<p>Carnegie Museum of Art</p>
+	 		</div>
+
+	 		<div class="small-12 columns">
+	 		<label>Event Details</label>
+	 		<p>RACE: Are We So Different? is an interactive multidisciplinary exhibition that encourages visitors to explore the science, history,and everyday impact of race and racism. Themes explored in the exhibition invite discussion about the effect of historical theories on contemporary thought and practice. Additional exhibit components specific to Pittsburgh have been included to enhance the experience for local audiences. The Community Voices Gallery, a collaboration between Carnegie Museum of Art and Carnegie Museum of Natural History, focuses the exhibition's themes on Pittsburgh and the local experience.</p>
+	 		</div>
+     	
+     	
+     	</div>
+    	<a class="close-reveal-modal">&#215;</a>
+
+     </div>
+         
+         
+    <div id="add_modal" class="reveal-modal tiny" data-reveal>
+    	<form id="event" method="POST" >
+    	<h4 id="event_title">New Event</h4>
+    	
+    	    	
+	<!--
+ <dl class="tabs" data-tab>
+	  <dd class=""><a href="#panel2-1" id="new_event_tab">New Event</a></dd>
+	  <dd><a href="#panel2-2" class="existing_event" id="existing_event_tab">Existing Event</a></dd>
+	</dl>
+-->
+	<div class="tabs-content row collapse">
+	  <div class="content active" id="panel2-1">
+	  	
+	  	<div class="small-8 columns">
+		  	<label>Event Name</label>
+	    <input type="text" name="event_name_new" id="event_name_new" class="" placeholder="Add an event name"/>
+	  	</div>
+	  	<div class="small-4 columns">
+		  		<dl class="tabs" data-tab>
+		  		
+		  		<dd><a href="#panel2-2" class="existing_event" id="existing_event_tab"><i class="fa fa-pencil"></i>Add To Event</a></dd>
+		  		
+		  		</dl>
+	  	</div>
+	  </div>
+	  <div class="content" id="panel2-2">
+	  	<div class="small-8 columns">
+
+	    <label>Event Name</label>
+	    <select name="event_name_update" id="event_name_update">
+	    	<option value="-1" selected ></option>
+	    </select>
+	  	</div>
+	  	<div class="small-4 columns">
+		  				  		<dl class="tabs" data-tab>
+		  		
+		  		 <dd class=""><a href="#panel2-1" id="new_event_tab"><i class="fa fa-plus"></i>New Event</a></dd>
+		  		
+		  		</dl>
+
+	  	</div>
+
+	  </div>
+	   <div class="small-12 columns">
+		 
+		 <div class="row collapse">
+			 <div class="small-4 columns">
+			 <label>Date</label>
+		    <input type="text" name="event_start" class="date_picker" id="start_date" />
+		    <input type="text" name="event_end" class="date_picker" id="end_date" style="display:none;" />
+			 </div>
+			 <div class="small-4 columns">
+			  <label>Start Time (optional)</label>
+		    <input type="text" name="" class="date_picker" id="event_start_time" placeholder="HH:MM" />
+			 </div>
+			 <div class="small-4 columns">
+			  <label>End Time (optional)</label>
+			 <input type="text" name="end_time" class="date_picker" id="event_end_time" placeholder="HH:MM" />
+			 </div>
+			
+		</div>
+		
+	   </div>
+	   <div class="small-8 columns">
+			 <label>Location (optional)</label>
+	  	<input type="text" name="location" class="input" id="event_location" placeholder="Add location" />	   
+	   </div>
+	   <div class="small-4 columns">
+	   	&nbsp;
+	   </div>
+	   <div class="small-12 columns">
+	    <label>Brief description of the event</label>
+	    <textarea rows="5" name="event_description" id="event_description" placeholder="Add description"></textarea>
+	  	</div>
+		<div class="small-12 columns">
+			<div class="row collapse permissions">
+				<div class="small-6 columns">
+				<ul class="button-group radius" id="event_toggle">
+					  <li><a href="#" class="active button tiny" id="tent">Tentative</a></li>
+					  <li><a href="#" class="button tiny" id="pub">Public</a></li>
+  				</ul>
+  				<input type="hidden" name="event_status" value="tent" id="event_status" />
+				</div>
+				<div class="small-6 columns">
+  				<label><strong>Tentative</strong> is visible to event planners. <strong>Public</strong> is visible on public calendar.</label>
+				<!--
+<div class="small-12 columns">
+					<input type="radio" /> Tentative
+				</div>
+				<div class="small-12 columns">
+					<input type="radio" /> Public
+				</div>
+-->
+				</div>
+			</div>
+		</div>
+	  </div>
+	  <div class="footer">
+	   	<input type="submit" class="button tiny left" value="Add Event" id="add_event" />
+	  	<input type="submit" class="button tiny left" value="Update Event" id="update_event" />
+	  	<a href="#" id="cancel_event" class="link small left">Cancel</a>
+	  	<a href="#" id="remove_event" class="link small left">Remove</a>
+	 
+	  </div>
+    	</form>
+    	
+  	<a class="close-reveal-modal">&#215;</a>
+  </div>
+  	
+  </div>
+
+	<!-- !Javascript - at the bottom for fast page loading -->
+	<!-- Grab Google CDN's jQuery. fall back to local if necessary -->
+	<script>
+    $(document).foundation();
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,10 @@
+var events = [
+	{ id: "pp", event_start: "March 29, 2014", date_length: "1", event_name: "Gar Conference" , event_details : "4/3 10am to 4pm", status: "pub"},
+	 {id: "pp", event_start: "April 14, 2014", date_length: "1", event_name: "Gar Conference" , event_details : "4/3 10am to 4pm", status: "pub"},
+	{ id: "ps", event_start: "April 5, 2014", date_length: "2", event_name: "Pittsburgh Pirates Game" , event_details: "Pirates @Home 2pm to 4pm", status: "pub"},
+	{ id: "ps", event_start: "April 9, 2014", date_length: "2", event_name: "Pittsburgh Pirates Game" , event_details: "Pirates @Home 2pm to 4pm", status: "pub"},
+	{ id: "ps", event_start: "April 17, 2014", date_length: "2", event_name: "Pittsburgh Pirates Game" , event_details: "Pirates @Home 2pm to 4pm", status: "pub"},
+	{ id: "bi", event_start: "May 3, 2014", date_length: "7", event_name: "Coffee Bonanza" , event_details: "Drink, Eat, Enjoy", status: "tent"},
+	{ id: "pca", event_start: "April 15, 2014", date_length: "2", event_name: "Coffee Bonanza" , event_details: "Drink, Eat, Enjoy", status: "pub"},
+	{ id: "pca", event_start: "April 22, 2014", date_length: "2", event_name: "Coffee Update" , event_details: "Drink, Eat, Enjoy", status: "pub"}
+];
